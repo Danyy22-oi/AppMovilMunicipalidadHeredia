@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Estado Actual del Reporte -->
+
     <TextView
         android:id="@+id/tvEstadoActual"
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
         android:padding="10dp"
         android:background="@color/colorPrimary"/>
 
-    <!-- Historial de Cambios -->
+
     <TextView
         android:id="@+id/tvHistorial"
         android:layout_width="match_parent"
@@ -34,7 +34,7 @@
         android:layout_weight="1"
         android:layout_marginBottom="16dp" />
 
-    <!-- Botón para Simular Cambio de Estado -->
+
     <Button
         android:id="@+id/btnSimularCambioEstado"
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
         android:textColor="@android:color/white"
         android:background="@color/colorAccent"/>
 
-    <!-- Botón para Volver -->
+
     <Button
         android:id="@+id/btnVolver"
         android:layout_width="wrap_content"

@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Título de la pantalla -->
+
     <TextView
         android:id="@+id/tvTitulo"
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
         android:textStyle="bold"
         android:layout_marginBottom="16dp" />
 
-    <!-- Campo para ingresar la consulta -->
+
     <EditText
         android:id="@+id/etConsulta"
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
         android:layout_marginBottom="16dp"
         android:minHeight="100dp" />
 
-    <!-- Botón para enviar la consulta -->
+
     <Button
         android:id="@+id/btnEnviarConsulta"
         android:layout_width="match_parent"
@@ -34,7 +34,7 @@
         android:textColor="@android:color/white"
         android:background="@color/colorAccent" />
 
-    <!-- Número de Ticket generado -->
+
     <TextView
         android:id="@+id/tvTicketNumero"
         android:layout_width="match_parent"
@@ -44,7 +44,7 @@
         android:layout_marginTop="16dp"
         android:gravity="center" />
 
-    <!-- Respuesta de la municipalidad -->
+
     <TextView
         android:id="@+id/tvRespuestaMunicipalidad"
         android:layout_width="match_parent"
@@ -54,7 +54,7 @@
         android:layout_marginTop="16dp"
         android:gravity="center" />
 
-    <!-- Botón para volver -->
+
     <Button
         android:id="@+id/btnVolver"
         android:layout_width="wrap_content"

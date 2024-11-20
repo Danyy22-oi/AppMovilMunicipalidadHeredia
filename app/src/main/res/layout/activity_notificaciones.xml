@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Título de la pantalla -->
+
     <TextView
         android:id="@+id/tvTitulo"
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
         android:textStyle="bold"
         android:layout_marginBottom="16dp" />
 
-    <!-- Descripción de las opciones de notificación -->
+
     <TextView
         android:id="@+id/tvDescripcionNotificaciones"
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
         android:textSize="16sp"
         android:layout_marginBottom="16dp" />
 
-    <!-- Switch para notificaciones en la aplicación -->
+
     <Switch
         android:id="@+id/switchNotificacionesApp"
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
         android:text="Notificaciones en la app"
         android:layout_marginBottom="16dp" />
 
-    <!-- Switch para notificaciones por correo -->
+
     <Switch
         android:id="@+id/switchNotificacionesCorreo"
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
         android:text="Notificaciones por correo"
         android:layout_marginBottom="16dp" />
 
-    <!-- Estado actual de las notificaciones -->
+
     <TextView
         android:id="@+id/tvEstadoNotificaciones"
         android:layout_width="match_parent"
@@ -49,7 +49,7 @@
         android:textSize="16sp"
         android:layout_marginBottom="16dp" />
 
-    <!-- Botón para guardar configuración -->
+
     <Button
         android:id="@+id/btnGuardarConfiguracion"
         android:layout_width="match_parent"

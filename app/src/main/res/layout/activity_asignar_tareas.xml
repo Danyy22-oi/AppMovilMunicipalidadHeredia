@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Título de la pantalla -->
+
     <TextView
         android:id="@+id/tvTitulo"
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
         android:textStyle="bold"
         android:layout_marginBottom="16dp" />
 
-    <!-- Lista de Reportes -->
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvReportes"
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
         android:layout_weight="1"
         android:layout_marginBottom="16dp" />
 
-    <!-- Selector de equipo -->
+
     <Spinner
         android:id="@+id/spinnerEquipo"
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
         android:importantForAccessibility="yes"
         android:contentDescription="Selecciona el equipo de recolección" />
 
-    <!-- Mensaje de estado de la tarea -->
+
     <TextView
         android:id="@+id/tvMensajeEstado"
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
         android:layout_marginBottom="16dp"
         android:gravity="center" />
 
-    <!-- Botón para asignar tarea -->
+
     <Button
         android:id="@+id/btnAsignarTarea"
         android:layout_width="match_parent"
@@ -51,7 +51,7 @@
         android:textColor="@android:color/white"
         android:background="@color/colorAccent" />
 
-    <!-- Botón para volver -->
+
     <Button
         android:id="@+id/btnVolver"
         android:layout_width="wrap_content"
