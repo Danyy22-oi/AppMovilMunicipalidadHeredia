@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Configuración de Alertas de Recolección"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar tipo de recolección:"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/cb_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regular" />
+
+        <CheckBox
+            android:id="@+id/cb_reciclables"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reciclables" />
+
+        <CheckBox
+            android:id="@+id/cb_organicos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orgánicos" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Frecuencia de notificación:"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_frecuencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rb_24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24 horas antes" />
+            <RadioButton
+                android:id="@+id/rb_12h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 horas antes" />
+            <RadioButton
+                android:id="@+id/rb_2h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 horas antes" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zonas de interés:"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_agregar_zona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar Zona (Máx: 3)"
+            android:drawableLeft="@android:drawable/ic_menu_add" />
+
+        <TextView
+            android:id="@+id/tv_zonas_seleccionadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zonas actuales: Ninguna"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:paddingTop="8dp" />
+
+
+        <Button
+            android:id="@+id/btn_guardar_configuracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar configuración"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
