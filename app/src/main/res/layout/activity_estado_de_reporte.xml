@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Estado Actual del Reporte -->
+    <TextView
+        android:id="@+id/tvEstadoActual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado actual del reporte: En proceso"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:background="@color/colorPrimary"/>
+
+    <!-- Historial de Cambios -->
+    <TextView
+        android:id="@+id/tvHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Historial de cambios:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHistorialEstados"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botón para Simular Cambio de Estado -->
+    <Button
+        android:id="@+id/btnSimularCambioEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simular Cambio de Estado"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"/>
+
+    <!-- Botón para Volver -->
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

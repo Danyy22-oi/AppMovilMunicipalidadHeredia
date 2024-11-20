@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reportar Residuos"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Campo para agregar una ubicación -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar ubicación:"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnSelectLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abrir Mapa" />
+
+        <!-- Espacio para imágenes -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subir fotos de los residuos:"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnTakePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tomar Foto" />
+
+            <Button
+                android:id="@+id/btnUploadPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Subir Foto" />
+        </LinearLayout>
+
+        <!-- Lista de imágenes seleccionadas -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Imágenes seleccionadas:"
+            android:textSize="16sp"
+            android:paddingTop="16dp" />
+
+        <RecyclerView
+            android:id="@+id/rvImages"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#E0E0E0"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón para enviar el reporte -->
+        <Button
+            android:id="@+id/btnSubmitReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar Reporte"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

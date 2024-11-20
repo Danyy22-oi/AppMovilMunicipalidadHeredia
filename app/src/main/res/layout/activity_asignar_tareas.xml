@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título de la pantalla -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Asignación de Tareas de Recolección"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Lista de Reportes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvReportes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Selector de equipo -->
+    <Spinner
+        android:id="@+id/spinnerEquipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Selecciona el equipo de recolección" />
+
+    <!-- Mensaje de estado de la tarea -->
+    <TextView
+        android:id="@+id/tvMensajeEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado del reporte: Pendiente"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center" />
+
+    <!-- Botón para asignar tarea -->
+    <Button
+        android:id="@+id/btnAsignarTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Asignar Tarea"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent" />
+
+    <!-- Botón para volver -->
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
