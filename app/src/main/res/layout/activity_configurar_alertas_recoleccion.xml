@@ -8,6 +8,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        <!-- Toolbar con icono de menú -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:background="#003366"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <ImageView
+                android:id="@+id/iv_menu_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="start"
+                android:contentDescription="Ícono del menú"
+                android:padding="8dp"
+                android:src="@drawable/menu_hamburguesa"
+                android:tint="#FFFFFF" />
+        </androidx.appcompat.widget.Toolbar>
         <!-- Logo en la parte superior -->
         <ImageView
             android:id="@+id/ivLogoMunicipalidad"

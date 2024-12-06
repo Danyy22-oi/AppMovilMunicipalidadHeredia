@@ -1,10 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
 
+
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp">
+    <!-- Toolbar con icono de menú -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:background="#003366"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/iv_menu_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="start"
+            android:contentDescription="Ícono del menú"
+            android:padding="8dp"
+            android:src="@drawable/menu_hamburguesa"
+            android:tint="#FFFFFF" />
+    </androidx.appcompat.widget.Toolbar>
     <!-- Logo en la parte superior -->
     <ImageView
         android:id="@+id/ivLogoMunicipalidad"
@@ -15,54 +37,104 @@
         android:contentDescription="Logo de la Municipalidad"
         android:src="@drawable/ReciclaYa" />
 
-    <TextView
-        android:id="@+id/tvTitulo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Contacto con la Municipalidad"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp" />
+        <!-- Título principal -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contacto con la Municipalidad"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textColor="#003366"
+            android:layout_marginBottom="16dp" />
 
-    <EditText
-        android:id="@+id/etConsulta"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Escribe tu consulta aquí"
-        android:inputType="textMultiLine"
-        android:layout_marginBottom="16dp"
-        android:minHeight="100dp" />
+        <!-- Campo de texto -->
+        <EditText
+            android:id="@+id/etConsulta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe tu consulta aquí"
+            android:hintTextColor="#008000"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="16dp"
+            android:minHeight="100dp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif" />
 
-    <Button
-        android:id="@+id/btnEnviarConsulta"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Enviar Consulta"
-        android:textColor="@android:color/white"
-        android:background="@color/colorAccent" />
+        <!-- Botón principal -->
+        <Button
+            android:id="@+id/btnEnviarConsulta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar Consulta"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif"
+            android:background="#003366"
+            android:layout_marginBottom="16dp" />
 
-    <TextView
-        android:id="@+id/tvTicketNumero"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Número de Ticket: "
-        android:textSize="16sp"
-        android:layout_marginTop="16dp"
-        android:gravity="center" />
+        <!-- Mensaje de ticket -->
+        <TextView
+            android:id="@+id/tvTicketNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número de Ticket: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#008000"
+            android:layout_marginTop="16dp"
+            android:gravity="center" />
 
-    <TextView
-        android:id="@+id/tvRespuestaMunicipalidad"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Respuesta de la Municipalidad: "
-        android:textSize="16sp"
-        android:layout_marginTop="16dp"
-        android:gravity="center" />
+        <!-- Mensaje de respuesta -->
+        <TextView
+            android:id="@+id/tvRespuestaMunicipalidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Respuesta de la Municipalidad: "
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#008000"
+            android:layout_marginTop="16dp"
+            android:gravity="center" />
 
-    <Button
-        android:id="@+id/btnVolver"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Volver"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp" />
+        <!-- Botón secundario -->
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:background="#28A745"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+        <!-- Iconos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"
+                android:fontFamily="@font/material_symbols_outlined"
+                android:textColor="#003366"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menú"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#003366" />
+        </LinearLayout>
+    </LinearLayout>

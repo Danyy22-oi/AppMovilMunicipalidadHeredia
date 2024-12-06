@@ -2,15 +2,33 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="50dp">
-        <!-- Logo en la parte superior -->
+        android:orientation="vertical">
+        <!-- Toolbar con icono de menú -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:background="#003366"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
+            <ImageView
+                android:id="@+id/iv_menu_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="start"
+                android:contentDescription="Ícono del menú"
+                android:padding="8dp"
+                android:src="@drawable/menu_hamburguesa"
+                android:tint="#FFFFFF" />
+        </androidx.appcompat.widget.Toolbar>
+        <!-- Logo en la parte superior -->
         <ImageView
             android:id="@+id/ivLogoMunicipalidad"
             android:layout_width="157dp"
@@ -20,21 +38,28 @@
             android:contentDescription="Logo de la Municipalidad"
             android:src="@drawable/ReciclaYa" />
 
+        <!-- Título principal -->
         <TextView
             android:id="@+id/tv_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Solicitud de recolección de escombros"
-            android:textSize="20sp"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-bold"
             android:textStyle="bold"
             android:gravity="center"
+            android:textColor="#003366"
             android:paddingBottom="8dp" />
 
+        <!-- Tipo de escombros -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tipo de escombros:"
-            android:textSize="20sp" />
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-semibold"
+            android:textColor="#008000"
+            android:paddingTop="8dp" />
 
         <RadioGroup
             android:id="@+id/rg_escombros"
@@ -45,24 +70,36 @@
                 android:id="@+id/rb_construccion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Construcción" />
+                android:text="Construcción"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000" />
             <RadioButton
                 android:id="@+id/rb_remodelacion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Remodelación" />
+                android:text="Remodelación"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000" />
             <RadioButton
                 android:id="@+id/rb_demolicion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Demolición" />
+                android:text="Demolición"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000" />
         </RadioGroup>
 
+        <!-- Volumen -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Volumen (m³, máx 3):"
-            android:textSize="20sp"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-semibold"
+            android:textColor="#008000"
             android:paddingTop="8dp" />
 
         <EditText
@@ -70,13 +107,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Ingrese volumen en m³"
-            android:inputType="numberDecimal" />
+            android:hintTextColor="#6c757d"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textColor="#000000" />
 
+        <!-- Subir fotografías -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Subir fotografías (2-5):"
-            android:textSize="20sp"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-semibold"
+            android:textColor="#008000"
             android:paddingTop="8dp" />
 
         <Button
@@ -84,14 +128,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Subir fotos"
-            android:drawableLeft="@android:drawable/ic_menu_camera" />
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textColor="#FFFFFF"
+            android:background="#003366"
+            android:drawableLeft="@drawable/ic_camera_alt" />
 
-
+        <!-- Ubicación -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ubicación:"
-            android:textSize="16sp"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-semibold"
+            android:textColor="#008000"
             android:paddingTop="8dp" />
 
         <Button
@@ -99,16 +149,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Seleccionar en el mapa"
-            android:drawableLeft="@android:drawable/ic_menu_mapmode" />
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textColor="#FFFFFF"
+            android:background="#003366"
+            android:drawableLeft="@drawable/ic_map" />
 
-
+        <!-- Enviar solicitud -->
         <Button
             android:id="@+id/btn_enviar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Enviar solicitud"
-            android:backgroundTint="@color/teal_700"
-            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:textColor="#FFFFFF"
+            android:background="#28A745"
             android:layout_marginTop="16dp" />
     </LinearLayout>
 </ScrollView>
