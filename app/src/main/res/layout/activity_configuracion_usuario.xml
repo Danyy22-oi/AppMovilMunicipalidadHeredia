@@ -37,36 +37,25 @@
                     android:tint="#FFFFFF" />
             </androidx.appcompat.widget.Toolbar>
 
-            <!-- Título de Notificaciones -->
+            <!-- Título de Configuración -->
             <TextView
                 android:id="@+id/tvTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Notificaciones"
+                android:text="Configuración de Usuario"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:gravity="center"
                 android:paddingBottom="16dp" />
 
-            <!-- Lista de Notificaciones -->
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvNotifications"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#FFFFFF"
-                android:layout_marginBottom="16dp"
-                android:padding="8dp"/>
-
-            <!-- Configuración de Notificaciones -->
+            <!-- Configuración de Privacidad -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Configuración de Notificaciones"
-                android:textSize="16sp"
-                android:paddingTop="16dp"
+                android:text="Preferencias de Privacidad"
+                android:textSize="18sp"
                 android:paddingBottom="8dp" />
 
-            <!-- Switch para activar/desactivar notificaciones -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -74,19 +63,64 @@
                 android:gravity="center_vertical">
 
                 <Switch
-                    android:id="@+id/switchNotifications"
+                    android:id="@+id/switchPrivacy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Habilitar Notificaciones"
-                    android:checked="true" />
+                    android:text="Habilitar Privacidad"
+                    android:checked="true"/>
             </LinearLayout>
 
-            <!-- Botón para actualizar configuraciones -->
-            <Button
-                android:id="@+id/btnUpdateSettings"
+            <!-- Configuración de Cambio de Idioma -->
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Actualizar Configuración"
+                android:text="Cambiar Idioma"
+                android:textSize="18sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Configuración de Zona Horaria -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cambiar Zona Horaria"
+                android:textSize="18sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerTimezone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Cambiar Contraseña -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cambiar Contraseña"
+                android:textSize="18sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cambiar Contraseña"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+
+            <!-- Botón para Guardar Configuraciones -->
+            <Button
+                android:id="@+id/btnSaveSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar Configuraciones"
                 android:backgroundTint="#4CAF50"
                 android:textColor="#FFFFFF"
                 android:layout_marginTop="16dp" />
