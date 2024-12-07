@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar con icono de menú -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#003366"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <ImageView
+                android:id="@+id/iv_menu_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="start"
+                android:contentDescription="Ícono del menú"
+                android:padding="8dp"
+                android:src="@drawable/menu_hamburguesa"
+                android:tint="#FFFFFF" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reportes de Limpieza"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Filtros -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filtros:"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:paddingBottom="16dp">
+
+            <!-- Filtro de fecha -->
+            <Spinner
+                android:id="@+id/spinner_fecha"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/fechas" />
+
+            <!-- Filtro de tipo de residuo -->
+            <Spinner
+                android:id="@+id/spinner_tipo_residuo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/tipos_residuos" />
+
+            <!-- Filtro de zona -->
+            <Spinner
+                android:id="@+id/spinner_zona"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/zonas" />
+        </LinearLayout>
+
+        <!-- Botón de aplicar filtros -->
+        <Button
+            android:id="@+id/btn_aplicar_filtros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aplicar Filtros"
+            android:background="#003366"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- Estadísticas y gráficos -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estadísticas de Limpieza"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Volumen de residuos recolectados"
+                android:textSize="14sp"
+                android:paddingBottom="8dp" />
+
+            <!-- Gráfico de barras o similar -->
+            <ImageView
+                android:id="@+id/img_volumen_residuos"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/graph_sample"
+                android:contentDescription="Gráfico de volumen de residuos" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comparativa entre zonas"
+                android:textSize="14sp"
+                android:paddingBottom="8dp" />
+
+            <!-- Gráfico comparativo -->
+            <ImageView
+                android:id="@+id/img_comparativa_zonas"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/graph_sample"
+                android:contentDescription="Gráfico comparativo de zonas" />
+        </LinearLayout>
+
+        <!-- Detalles por actividad -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalles por Actividad"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <!-- Lista de actividades -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Ejemplo de actividad -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 1"
+                    android:textSize="14sp" />
+                <Button
+                    android:id="@+id/btn_ver_detalles_actividad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ver detalles"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Más actividades -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 2"
+                    android:textSize="14sp" />
+                <Button
+                    android:id="@+id/btn_ver_detalles_actividad_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ver detalles"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar con icono de menú -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#003366"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <ImageView
+                android:id="@+id/iv_menu_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="start"
+                android:contentDescription="Ícono del menú"
+                android:padding="8dp"
+                android:src="@drawable/menu_hamburguesa"
+                android:tint="#FFFFFF" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Logo en la parte superior -->
+        <ImageView
+            android:id="@+id/ivLogoMunicipalidad"
+            android:layout_width="157dp"
+            android:layout_height="143dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Logo de la Municipalidad"
+            android:src="@drawable/ReciclaYa" />
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gestión de Puntos de Reciclaje"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Campo de Nombre -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Punto:"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <EditText
+            android:id="@+id/et_point_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ejemplo: Parque Central"
+            android:inputType="text" />
+
+        <!-- Campo de Dirección -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dirección (Opcional):"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="8dp" />
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ejemplo: Avenida Principal"
+            android:inputType="text" />
+
+        <!-- Campo de Coordenadas -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coordenadas (Lat, Lng):"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="8dp" />
+        <EditText
+            android:id="@+id/et_coordinates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ejemplo: 9.9281, -84.0907"
+            android:inputType="text" />
+
+        <!-- Campo de Horario -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Horario de Acceso:"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="8dp" />
+        <EditText
+            android:id="@+id/et_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ejemplo: Lunes a Viernes 8:00 AM - 5:00 PM"
+            android:inputType="text" />
+
+        <!-- Botón Guardar -->
+        <Button
+            android:id="@+id/btn_save_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Punto"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>
+
