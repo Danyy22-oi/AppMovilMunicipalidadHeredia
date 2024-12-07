@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/ivLogoMunicipalidad"
+            android:layout_width="157dp"
+            android:layout_height="143dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Logo de la Municipalidad"
+            android:src="@drawable/ReciclaYa" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:text="Puntos de Reciclaje Cercanos"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filtros avanzados:"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btn_filtro_tipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de Residuo"
+                android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btn_filtro_zona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@android:drawable/ic_menu_mapmode"
+                android:text="Cerca de mi" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="Puntos Cercanos de Reciclaje"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Barva" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Ubicación: Parque Central de Barva. Enfocado en: Residuos plásticos y metálicos. Horario: 7:00 a.m. - 3:00 p.m., de lunes a viernes." />
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Santo Domingo" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="Ubicación: Entrada del parque recreativo en Los Ángeles. Enfocado en: Residuos orgánicos para compostaje comunitario. Horario: Sábados y domingos, 8:00 a.m. - 12:00 p.m." />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="San Rafael" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Ubicación: Mercado Municipal de San Rafael. Enfocado en: Papel, cartón y vidrio. Horario: 6:30 a.m. - 6:00 p.m., todos los días." />
+
+        <Button
+            android:id="@+id/btn_exportar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#003366"
+            android:drawableLeft="@android:drawable/ic_menu_zoom"
+            android:text="Buscar puntos"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

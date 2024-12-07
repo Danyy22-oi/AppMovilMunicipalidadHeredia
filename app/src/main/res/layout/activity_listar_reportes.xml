@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <!-- Toolbar con icono de menú -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:background="#003366"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/iv_menu_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="start"
+            android:contentDescription="Ícono del menú"
+            android:padding="8dp"
+            android:src="@drawable/menu_hamburguesa"
+            android:tint="#FFFFFF" />
+    </androidx.appcompat.widget.Toolbar>
+    <!-- Logo en la parte superior -->
+    <ImageView
+        android:id="@+id/ivLogoMunicipalidad"
+        android:layout_width="157dp"
+        android:layout_height="143dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Logo de la Municipalidad"
+        android:src="@drawable/ReciclaYa" />
+
+    <TextView
+        android:id="@+id/tvEstadoActual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:text="Lista de reportes:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tvHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginBottom="8dp"
+        android:background="#4CAF50"
+        android:text="TICKET: 12345              ESTADO: Pendientes  LUGAR: Heredia,Centro	   TIPO: Escombro"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tvHistorial2"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginBottom="8dp"
+        android:background="#4CAF50"
+        android:text="TICKET: 12378              ESTADO: Proceso  LUGAR: Mercedes Norte	   TIPO: Reciclaje"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvHistorial4"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginBottom="8dp"
+        android:background="#4CAF50"
+        android:backgroundTint="#4CAF50"
+        android:text="TICKET: 78945              ESTADO: Terminado  LUGAR: Guarari   	        TIPO: Residuo "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvHistorial5"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginBottom="8dp"
+        android:background="#4CAF50"
+        android:text="TICKET: 45632         ESTADO: En camnino  LUGAR: Barva 	      TIPO: Escombro"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Actualizar" />
+
+</LinearLayout>
