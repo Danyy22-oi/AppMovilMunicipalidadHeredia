@@ -9,6 +9,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
         <ImageView
             android:id="@+id/ivLogoMunicipalidad"
             android:layout_width="157dp"
@@ -18,11 +19,11 @@
             android:contentDescription="Logo de la Municipalidad"
             android:src="@drawable/ReciclaYa" />
 
+
         <TextView
-            android:id="@+id/tv_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Gestión de Puntos de Reciclaje"
+            android:text="Monitoreo en Tiempo Real de Equipos de Recolección"
             android:textSize="18sp"
             android:textStyle="bold"
             android:gravity="center"
@@ -32,70 +33,59 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nombre del Punto:"
+            android:text="Estado de Recolección"
             android:textSize="16sp"
             android:paddingBottom="8dp" />
-        <EditText
-            android:id="@+id/et_point_name"
+
+        <TextView
+            android:id="@+id/tv_estado_recoleccion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ejemplo: Parque Central"
-            android:inputType="text" />
-
+            android:text="Cargando estado de los equipos..."
+            android:textSize="14sp"
+            android:paddingBottom="16dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dirección (Opcional):"
+            android:text="Ubicación de los Equipos"
             android:textSize="16sp"
-            android:layout_marginTop="16dp"
             android:paddingBottom="8dp" />
-        <EditText
-            android:id="@+id/et_address"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Ejemplo: Avenida Principal"
-            android:inputType="text" />
 
+        <FrameLayout
+            android:id="@+id/map_container"
+            android:layout_width="match_parent"
+            android:layout_height="227dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/darker_gray">
+
+        </FrameLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Coordenadas (Lat, Lng):"
+            android:text="Actualización en Tiempo Real"
             android:textSize="16sp"
-            android:layout_marginTop="16dp"
+            android:paddingTop="16dp"
             android:paddingBottom="8dp" />
-        <EditText
-            android:id="@+id/et_coordinates"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Ejemplo: 9.9281, -84.0907"
-            android:inputType="text" />
-
 
         <TextView
+            android:id="@+id/tv_actualizacion_estado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Horario de Acceso:"
-            android:textSize="16sp"
-            android:layout_marginTop="16dp"
-            android:paddingBottom="8dp" />
-        <EditText
-            android:id="@+id/et_schedule"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Ejemplo: Lunes a Viernes 8:00 AM - 5:00 PM"
-            android:inputType="text" />
-
+            android:text="Estado actualizado cada 5 segundos"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:paddingBottom="24dp" />
 
         <Button
-            android:id="@+id/btn_save_point"
+            android:id="@+id/btn_actualizar_estado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Guardar Punto"
+            android:text="Actualizar Estado"
             android:background="#003366"
             android:textColor="#FFFFFF"
-            android:layout_marginTop="24dp" />
+            android:textSize="16sp" />
+
     </LinearLayout>
 </ScrollView>
-
