@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
             android:paddingBottom="8dp"
-            android:text="Fotos de actividad ilegal:"
+            android:text="Foto de actividad ilegal:"
             android:textSize="16sp" />
 
         <LinearLayout

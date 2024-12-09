@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:paddingBottom="16dp"
-            android:text="Puntos de reciclaje obsoletos:"
+            android:text="Puntos de reciclaje obsoleto:"
             android:textSize="24sp"
             android:textStyle="bold" />
 
