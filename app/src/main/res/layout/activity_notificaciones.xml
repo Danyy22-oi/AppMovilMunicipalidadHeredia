@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <!-- Contenido Principal -->
     <ScrollView
         android:layout_width="match_parent"
@@ -16,6 +17,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp">
+
 
             <!-- Toolbar con icono de menú -->
             <androidx.appcompat.widget.Toolbar
