@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notificaciones de Recordatorio de Pagos"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#003366"
+            android:paddingBottom="16dp" />
+
+        <!-- Selección de Fecha -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccione Fecha de Recordatorio:"
+            android:textSize="16sp"
+            android:textColor="#003366"
+            android:paddingBottom="8dp" />
+        <EditText
+            android:id="@+id/et_fecha_recordatorio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="dd/mm/yyyy"
+            android:hintTextColor="#008000"
+            android:inputType="date"
+            android:textColor="#000000" />
+
+        <!-- Generar Comprobante -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generar Comprobante con QR:"
+            android:textSize="16sp"
+            android:textColor="#003366"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_generar_qr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generar QR"
+            android:background="#003366"
+            android:textColor="#FFFFFF" />
+
+        <!-- Enviar Notificación -->
+        <Button
+            android:id="@+id/btn_enviar_notificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#008000"
+            android:text="Enviar Notificación"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

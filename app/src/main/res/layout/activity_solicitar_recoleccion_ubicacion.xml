@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solicitud de Recolección de Reciclaje"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#003366"
+            android:paddingBottom="16dp" />
+
+        <!-- Dirección -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dirección de Recolección:"
+            android:textSize="16sp"
+            android:textColor="#003366"
+            android:paddingBottom="8dp" />
+        <EditText
+            android:id="@+id/et_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su dirección completa"
+            android:hintTextColor="#008000"
+            android:inputType="textPostalAddress"
+            android:textColor="#000000" />
+
+        <!-- Tipo de Reciclaje -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de Reciclaje:"
+            android:textSize="16sp"
+            android:textColor="#003366"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+        <Spinner
+            android:id="@+id/spinner_tipo_reciclaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Confirmación Automática -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Desea recibir confirmación automática?"
+            android:textSize="16sp"
+            android:textColor="#003366"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+        <Switch
+            android:id="@+id/switch_confirmacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recibir confirmación"
+            android:textSize="14sp"
+            android:textColor="#003366" />
+
+        <!-- Fecha Programada -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha Programada:"
+            android:textSize="16sp"
+            android:textColor="#003366"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+        <EditText
+            android:id="@+id/et_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seleccione la fecha"
+            android:hintTextColor="#008000"
+            android:inputType="date"
+            android:textColor="#000000" />
+
+        <!-- Botón para Enviar Solicitud -->
+        <Button
+            android:id="@+id/btn_enviar_solicitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="#003366"
+            android:text="Enviar Solicitud"
+            android:textColor="#FFFFFF" />
+
+        <!-- Botón para Cancelar Solicitud -->
+        <Button
+            android:id="@+id/btn_cancelar_solicitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FF0000"
+            android:text="Cancelar Solicitud"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

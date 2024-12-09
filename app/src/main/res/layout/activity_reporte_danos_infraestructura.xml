@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reportar Daños en Infraestructura"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#003366"
+            android:paddingBottom="16dp" />
+
+        <!-- Descripción del Problema -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción del Problema:"
+            android:textSize="16sp"
+            android:textColor="#003366"
+            android:paddingBottom="8dp" />
+        <EditText
+            android:id="@+id/et_descripcion_problema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Explique el daño observado"
+            android:hintTextColor="#008000"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:textColor="#000000" />
+
+        <!-- Adjuntar Fotos -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adjuntar Fotos:"
+            android:textSize="16sp"
+            android:textColor="#003366"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_adjuntar_fotos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Fotos"
+            android:drawableLeft="@android:drawable/ic_menu_camera"
+            android:textColor="#003366"
+            android:background="#FFFFFF" />
+
+        <!-- Botón para Enviar Reporte -->
+        <Button
+            android:id="@+id/btn_enviar_reporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="#003366"
+            android:text="Enviar Reporte"
+            android:textColor="#FFFFFF" />
+
+        <!-- Estado del Reporte -->
+        <TextView
+            android:id="@+id/tv_estado_reporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estado del reporte: No enviado"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingTop="16dp" />
+    </LinearLayout>
+</ScrollView>

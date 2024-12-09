@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actualizar Estado de Reporte de Limpieza"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#003366"
+            android:paddingBottom="16dp" />
+
+        <!-- Información detallada -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Información del Reporte:"
+            android:textSize="16sp"
+            android:textColor="#003366"
+            android:paddingBottom="8dp" />
+        <EditText
+            android:id="@+id/et_informacion_reporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese los detalles del reporte"
+            android:hintTextColor="#008000"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:textColor="#000000" />
+
+        <!-- Mapa de Ubicaciones -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mapa de Ubicaciones:"
+            android:textSize="16sp"
+            android:textColor="#003366"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_mostrar_mapa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mostrar Mapa"
+            android:background="#003366"
+            android:textColor="#FFFFFF" />
+
+        <!-- Consulta Personalizada -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consulta Personalizada:"
+            android:textSize="16sp"
+            android:textColor="#003366"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+        <EditText
+            android:id="@+id/et_consulta_personalizada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escriba su consulta"
+            android:hintTextColor="#008000"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:textColor="#000000" />
+
+        <!-- Botón para Actualizar Estado -->
+        <Button
+            android:id="@+id/btn_actualizar_estado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#008000"
+            android:text="Actualizar Estado"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

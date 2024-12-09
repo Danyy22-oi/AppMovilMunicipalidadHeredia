@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consultar Horario de Recolección"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#003366"
+            android:paddingBottom="16dp" />
+
+        <!-- Selección de Zona -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccione su Zona:"
+            android:textSize="16sp"
+            android:textColor="#003366"
+            android:paddingBottom="8dp" />
+        <Spinner
+            android:id="@+id/spinner_zonas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Título Horario -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Horarios Disponibles"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#003366"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <!-- Días de la semana con selección de horarios -->
+        <!-- Lunes -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lunes"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#003366"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+        <Spinner
+            android:id="@+id/spinner_lunes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Martes -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Martes"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#003366"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+        <Spinner
+            android:id="@+id/spinner_martes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Miércoles -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Miércoles"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#003366"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+        <Spinner
+            android:id="@+id/spinner_miercoles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Jueves -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jueves"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#003366"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+        <Spinner
+            android:id="@+id/spinner_jueves"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Viernes -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Viernes"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#003366"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+        <Spinner
+            android:id="@+id/spinner_viernes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Mostrar Horario Seleccionado -->
+        <TextView
+            android:id="@+id/tv_horario_seleccionado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Horario seleccionado: Ninguno"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <!-- Botón para Enviar Selección -->
+        <Button
+            android:id="@+id/btn_enviar_seleccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#008000"
+            android:text="Enviar Selección"
+            android:textColor="#FFFFFF" />
+
+        <!-- Botón Descargar PDF -->
+        <Button
+            android:id="@+id/btn_descargar_pdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#003366"
+            android:text="Descargar Horario en PDF"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
